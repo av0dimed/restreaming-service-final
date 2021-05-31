@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: stream-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8084
+
+logging:
+  level:
+    com:
+      diploma: debug
